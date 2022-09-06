@@ -4,8 +4,6 @@ import time
 from tkinter import filedialog
 import tkinter.messagebox as tm
 import preprocess as pr
-import DTALG as dt
-import RFALG as rf
 from tkinter import ttk
 from_date = datetime.datetime.today()
 currentDate = time.strftime("%d_%m_%y")
@@ -33,34 +31,7 @@ lbl = tk.Label(window, text="SELECT DATASET",width=20  ,height=2  ,fg=fgcolor  ,
 lbl.place(x=10, y=200)
 txt = tk.Entry(window,width=20,bg="white" ,fg="black",font=('times', 15, ' bold '))
 txt.place(x=300, y=215)
-lbl1 = tk.Label(window, text="LATITUDE",width=20  ,height=2  ,fg=fgcolor  ,bg=bgcolor ,font=('times', 15, ' bold ') ) 
-lbl1.place(x=10, y=300)
-lat = tk.Entry(window,width=20,bg="white" ,fg="black",font=('times', 15, ' bold '))
-lat.place(x=300, y=315)
-lbl1 = tk.Label(window, text="LONGITUDE",width=20  ,height=2  ,fg=fgcolor  ,bg=bgcolor ,font=('times', 15, ' bold ') ) 
-lbl1.place(x=500, y=300)
-lon = tk.Entry(window,width=20,bg="white" ,fg="black",font=('times', 15, ' bold '))
-lon.place(x=750, y=315)
-lbl1 = tk.Label(window, text="DATE",width=20  ,height=2  ,fg=fgcolor  ,bg=bgcolor ,font=('times', 15, ' bold ') ) 
-lbl1.place(x=10, y=400)
-txt2 = ttk.Combobox(window,width=10,font=('times', 15, ' bold '),values=["2015"])
-txt2.place(x=300, y=415)
-txt2.current(0)
-txt3 = ttk.Combobox(window,width=10,font=('times', 15, ' bold '),values=["01","02","03","04","05","06","07","08","09","10","11","12"])
-txt3.place(x=430, y=415)
-txt3.current(0)
-txt4 = ttk.Combobox(window,width=10,font=('times', 15, ' bold '),values=["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"])
-txt4.place(x=560, y=415)
-txt4.current(0)
-lbll1 = tk.Label(window, text="TIME",width=20  ,height=2  ,fg=fgcolor  ,bg=bgcolor ,font=('times', 15, ' bold ') ) 
-lbll1.place(x=700, y=400)
-txt5 = ttk.Combobox(window,width=10,font=('times', 15, ' bold '),values=["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"])
-txt5.place(x=900, y=415)
-txt5.current(0)
 
-txt6 = ttk.Combobox(window,width=10,font=('times', 15, ' bold '),values=["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"])
-txt6.place(x=1030, y=415)
-txt6.current(0)
 
 lbl4 = tk.Label(window, text="NOTIFICATION  ",width=20  ,fg=fgcolor,bg=bgcolor  ,height=2 ,font=('times', 15, ' bold ')) 
 lbl4.place(x=10, y=500)
